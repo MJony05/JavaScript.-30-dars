@@ -18,6 +18,12 @@ consolega "sevimli yangilik qo'shilmoqda"
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
+  const loader = document.querySelector(".loader");
+  setTimeout(function () {
+    loader.style.opacity = "0";
+    loader.style.display = "none";
+  }, 3000);
+
   const btnNews = document.querySelector(".btn-news"),
     newGenre = document.querySelector(".promo__genre"),
     bg = document.querySelector(".promo__bg"),
